@@ -1,0 +1,81 @@
+ .editorconfig                                      |    9 [32m+[m
+ .env.example                                       |   23 [32m+[m
+ .gitignore                                         |   37 [32m+[m
+ README.md                                          |   73 [32m+[m
+ app/Http/Controllers/AuthController.php            |   51 [32m+[m
+ app/Http/Controllers/Controller.php                |    7 [32m+[m
+ app/Http/Controllers/CustomerController.php        |   47 [32m+[m
+ app/Http/Controllers/ProductController.php         |   67 [32m+[m
+ app/Http/Controllers/SaleController.php            |   87 [32m+[m
+ app/Http/Controllers/UserController.php            |   68 [32m+[m
+ app/Http/Requests/CustomerRequest.php              |   30 [32m+[m
+ app/Http/Requests/ProductRequest.php               |   24 [32m+[m
+ app/Http/Requests/SaleRequest.php                  |   23 [32m+[m
+ app/Http/Requests/UserRequest.php                  |   38 [32m+[m
+ app/Models/Customer.php                            |   19 [32m+[m
+ app/Models/Product.php                             |   24 [32m+[m
+ app/Models/Sale.php                                |   34 [32m+[m
+ app/Models/User.php                                |   20 [32m+[m
+ app/Providers/AppServiceProvider.php               |   18 [32m+[m
+ app/Support/Images.php                             |   45 [32m+[m
+ artisan                                            |   11 [32m+[m
+ bootstrap/app.php                                  |   18 [32m+[m
+ bootstrap/cache/.gitignore                         |    2 [32m+[m
+ bootstrap/providers.php                            |    3 [32m+[m
+ composer.json                                      |   49 [32m+[m
+ composer.lock                                      | 7994 [32m++++++++++++++++++++[m
+ config/app.php                                     |   16 [32m+[m
+ config/auth.php                                    |   11 [32m+[m
+ config/cache.php                                   |   10 [32m+[m
+ config/database.php                                |   34 [32m+[m
+ config/filesystems.php                             |   16 [32m+[m
+ config/hashing.php                                 |    8 [32m+[m
+ config/logging.php                                 |   11 [32m+[m
+ config/seed.php                                    |    7 [32m+[m
+ config/session.php                                 |   20 [32m+[m
+ config/view.php                                    |    6 [32m+[m
+ database/factories/.gitignore                      |    2 [32m+[m
+ .../2026_01_01_000001_create_users_table.php       |   27 [32m+[m
+ .../2026_01_01_000002_create_products_table.php    |   26 [32m+[m
+ .../2026_01_01_000003_create_customers_table.php   |   25 [32m+[m
+ .../2026_01_01_000004_create_sales_table.php       |   32 [32m+[m
+ database/seeders/DatabaseSeeder.php                |   53 [32m+[m
+ database/seeders/images/ballpen.png                |  Bin [31m0[m -> [32m1269[m bytes
+ database/seeders/images/notebook.png               |  Bin [31m0[m -> [32m1317[m bytes
+ database/seeders/images/water.png                  |  Bin [31m0[m -> [32m1576[m bytes
+ phpunit.xml                                        |   16 [32m+[m
+ public/.htaccess                                   |   11 [32m+[m
+ public/css/app.css                                 |  115 [32m+[m
+ public/index.php                                   |   12 [32m+[m
+ public/js/app.js                                   |   68 [32m+[m
+ public/robots.txt                                  |    2 [32m+[m
+ resources/views/auth/login.blade.php               |   15 [32m+[m
+ resources/views/components/field.blade.php         |   12 [32m+[m
+ resources/views/components/photo.blade.php         |    6 [32m+[m
+ resources/views/customers/form.blade.php           |   13 [32m+[m
+ resources/views/customers/index.blade.php          |   29 [32m+[m
+ resources/views/layouts/app.blade.php              |   55 [32m+[m
+ resources/views/pagination.blade.php               |   18 [32m+[m
+ resources/views/products/form.blade.php            |   22 [32m+[m
+ resources/views/products/index.blade.php           |   39 [32m+[m
+ resources/views/sales/create.blade.php             |   51 [32m+[m
+ resources/views/sales/index.blade.php              |   31 [32m+[m
+ resources/views/users/form.blade.php               |   20 [32m+[m
+ resources/views/users/index.blade.php              |   32 [32m+[m
+ routes/console.php                                 |    1 [32m+[m
+ routes/web.php                                     |   25 [32m+[m
+ storage/app/private/.gitignore                     |    2 [32m+[m
+ storage/app/public/.gitignore                      |    2 [32m+[m
+ storage/framework/cache/data/.gitignore            |    2 [32m+[m
+ storage/framework/sessions/.gitignore              |    2 [32m+[m
+ .../testing/disks/public/products/ballpen.png      |  Bin [31m0[m -> [32m1269[m bytes
+ .../testing/disks/public/products/notebook.png     |  Bin [31m0[m -> [32m1317[m bytes
+ .../testing/disks/public/products/water.png        |  Bin [31m0[m -> [32m1576[m bytes
+ storage/framework/views/.gitignore                 |    2 [32m+[m
+ storage/logs/.gitignore                            |    2 [32m+[m
+ tests/Feature/AuthenticationTest.php               |   82 [32m+[m
+ tests/Feature/ManagementTest.php                   |  188 [32m+[m
+ tests/Feature/SalesTest.php                        |  171 [32m+[m
+ tests/Feature/SeederTest.php                       |   32 [32m+[m
+ tests/TestCase.php                                 |   40 [32m+[m
+ 80 files changed, 10243 insertions(+)
